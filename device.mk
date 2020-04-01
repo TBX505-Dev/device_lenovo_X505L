@@ -33,3 +33,6 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0_system
+
+# VNDK 
+PRODUCT_TARGET_VNDK_VERSION := 29
