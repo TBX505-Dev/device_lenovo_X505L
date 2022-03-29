@@ -18,24 +18,14 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Release name
 PRODUCT_RELEASE_NAME := X505L
 
-# inherit the usual stuff...
+# inherit LineageOS Configuration.
 #$(call inherit-product, build/target/product/product_launched_with_p.mk)
 $(call inherit-product, build/target/product/aosp_base.mk)
-$(call inherit-product, vendor/omni/config/common_tablet.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_X505L
+PRODUCT_NAME := lineage_X505L
 PRODUCT_DEVICE := X505L
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-X505L
 PRODUCT_MANUFACTURER := LENOVO
-
-# for FBE decryption 
-PRODUCT_PACKAGES += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
-
-# for tzdata
-PRODUCT_PACKAGES += \
-    tzdata_twrp
-

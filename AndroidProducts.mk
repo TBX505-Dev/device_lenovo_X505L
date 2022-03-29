@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_X505L.mk
+    $(LOCAL_DIR)/lineage_X505L.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_X505L-userdebug \
-    omni_X505L-user \
-    omni_X505L-eng
+    lineage_X505L-userdebug \
+    lineage_X505L-user \
+    lineage_X505L-eng
 
