@@ -18,6 +18,9 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Release name
 PRODUCT_RELEASE_NAME := X505L
 
+# Inherit device configuration.
+$(call inherit-product, device/lenovo/X505L/device.mk)
+
 # inherit LineageOS Configuration.
 #$(call inherit-product, build/target/product/product_launched_with_p.mk)
 $(call inherit-product, build/target/product/aosp_base.mk)
