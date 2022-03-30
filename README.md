@@ -1,0 +1,1 @@
+# Device Configuration for Lenovo Tab M10 HD tablets (X505F/L/X) #
