@@ -1,0 +1,5 @@
+on init
+    mount none /system/etc/fstab.qcom /vendor/etc/fstab.qcom bind
+
+on post-fs
+    mount none /system/etc/fstab.qcom /vendor/etc/fstab.qcom bind

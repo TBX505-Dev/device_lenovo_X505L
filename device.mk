@@ -43,10 +43,15 @@ PRODUCT_PACKAGES += \
 
 # Fstab
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
+    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_SYSTEM)/etc/fstab.qcom
 
 # Device Heap Configuration
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
+# Device-specific Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/init.x505.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.x505.rc
 
 # HIDL
 PRODUCT_PACKAGES += \
